@@ -8,3 +8,6 @@ dates of when you either liked or hated your idea.
 
 In addition, for each idea, you can view the lat/lon and it returns a map of where it was created. Also, it uses Google reverse 
 geocoding API to fetch lat/lon and give information on where the idea was created.
+
+Tools used:
+ - React-native framework / javascript
