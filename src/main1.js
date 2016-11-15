@@ -20,17 +20,17 @@ import common from './commonStyle'
 //TODO https://www.npmjs.com/package/react-native-parallax-scroll-view
 //TODO consider using realmDB
 
-//var lat = 0
-//var lon = 0
+var lat = 0
+var lon = 0
 var STORAGE_KEY = '@AsyncStorageExample:key';
 export default class Main1 extends Component {
   constructor(){
   super()
   this.state = {
-    tasks: [/*
+    tasks: [
           {id: 0, taskValue: 'placeHolder', num: 0, eachColor:'black'},
           {id: 1, taskValue: 'second', num: 0, eachColor:'black'}
-                      */],
+                      ],
                  task: '',
                  initialPosition:0,
                 credit:50};
@@ -117,7 +117,7 @@ getLocation(){
     let myDateStamp =  moment()
     let dateChecker = new Date()
     let lon = position.coords.longitude
-     let lat = position.coords.latitude
+     lat = position.coords.latitude
 
      let taskConcat = this.state.tasks.concat([{id: this.state.tasks.length,
        taskValue: this.state.task,
@@ -135,8 +135,8 @@ getLocation(){
     {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000}
     );
 
-//    alert('lat is ' +lat)
-//    alert('lon is '+ lon)
+    alert('lat is ' +lat)
+    alert('lon is '+ lon)
 
   }
 
@@ -229,7 +229,7 @@ getLocation(){
               <View style={{flex:1}} contentContainerStyle={{width: 1000, height: 1000}}>
                 <View style={{flex:1}} >
                   <Text style={{fontSize:20, color:eachColor}}>
-                    {meow.eachColor}  {meow.taskValue}({meow.num})
+                   {meow.taskValue}({meow.num})
                    </Text>
                  </View>
               </View>

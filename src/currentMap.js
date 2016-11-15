@@ -58,12 +58,12 @@ export default class currentMap extends Component {
           <Text> (Created on: {this.props.meow.currentDate} ) {"\n"}</Text>
           <Text>Name of the location: {this.state.serverJSON}</Text>
           <Text>GPS Coordinates: Latitude: {this.props.meow.eachLat}, longitude: {this.props.meow.eachLon}</Text>
-
+{/*
           <Text style={{marginTop:10}}>
             {this.state.geocoderAPI}
             sssssssssssssssssssssssssssssssssssssssssssssssss
             {this.state.serverJSON}
-          </Text>
+          </Text>  */}
 
         <View style={{alignItems:'center'}}>
           <GoogleStaticMap style={styles.map}
