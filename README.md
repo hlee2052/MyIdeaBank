@@ -1,6 +1,6 @@
 # MyIdeaBank
 
-### note: still need to do some touching 
+### note: still need to do some touching and add various functionalities
 ###Features:
 You can add different ideas into the main list. When you click an idea, it will be expanded into a new screen where there are 
 buttons to do other actions. For each idea, you can delete, like or hate the idea and your net like is
