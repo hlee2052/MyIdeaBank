@@ -34,12 +34,7 @@ export default class Main1 extends Component {
                  initialPosition:0,
                 credit:50};
   }
-// promise
- /*
- state: {
- tasks: [],
-}
- */
+
 componentWillMount(){
    AsyncStorage.getItem('tasks')
     .then((response)=> {
@@ -134,19 +129,8 @@ getLocation(){
   }
 
   addTask() {
-
-    //  this.state.tasks === [...this.state.tasks]
-    //  this.setState({tasks: [{id: this.state.tasks.length, taskValue: this.state.task}, ...this.state.tasks, ]})
-
-
     this.getLocation()
-  //////////////
-
-  ////
-
-
-    //alert(this.state.theLon)
-  this.setStorage();
+    this.setStorage();
   }
 
   removeTask(meow) {
@@ -162,16 +146,8 @@ getLocation(){
     alert('test')
   }
 
-
-
-
-
-  //condition ? expr1 : expr2
   addDateToHistory(meow, likeOrHate){
     let eachTimer = new moment()
-  //  let formattedTime = eachTimer.getDate() + eachTimer.getDay() + eachTimer.getFullYear()
-
-
     meowDate=eachTimer.toJSON()
 
     if (likeOrHate == 'like') {
@@ -210,7 +186,6 @@ getLocation(){
 
 
   renderList(tasks) {
-
     let i = 0
     let eachColor = 'black'
     return (

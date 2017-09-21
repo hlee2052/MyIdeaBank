@@ -119,7 +119,7 @@ getLocation(){
     let lon = position.coords.longitude
      lat = position.coords.latitude
 
-     let taskConcat = this.state.tasks.concat([{id: this.state.tasks.length,
+    let taskConcat = this.state.tasks.concat([{id: this.state.tasks.length,
        taskValue: this.state.task,
        eachLat:lat,
        eachLon:lon,
@@ -141,19 +141,8 @@ getLocation(){
   }
 
   addTask() {
-
-    //  this.state.tasks === [...this.state.tasks]
-    //  this.setState({tasks: [{id: this.state.tasks.length, taskValue: this.state.task}, ...this.state.tasks, ]})
-
-
     this.getLocation()
-  //////////////
-
-  ////
-
-
-    //alert(this.state.theLon)
-  this.setStorage();
+    this.setStorage();
   }
 
   removeTask(meow) {
@@ -164,34 +153,24 @@ getLocation(){
     this.setStorage()
   }
 
-
   test1() {
     alert('test')
   }
 
-
-
-
-
-  //condition ? expr1 : expr2
+  
   addDateToHistory(meow, likeOrHate){
     let eachTimer = new moment()
-  //  let formattedTime = eachTimer.getDate() + eachTimer.getDay() + eachTimer.getFullYear()
-
-
     meowDate=eachTimer.toJSON()
 
     if (likeOrHate == 'like') {
       let index = this.state.tasks.indexOf(meow)
       let tasksVar = this.state.tasks
-
       tasksVar[index].listHistory[tasksVar[index].historyCounter] = 'Liked on: ' + JSON.stringify(meowDate)
       this.setState(tasksVar)
     }
     if (likeOrHate =='hate'){
       let index = this.state.tasks.indexOf(meow)
       let tasksVar = this.state.tasks
-
       tasksVar[index].listHistory[tasksVar[index].historyCounter] = 'Hated on: '+JSON.stringify(meowDate)
       this.setState(tasksVar)
     }

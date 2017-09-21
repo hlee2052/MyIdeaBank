@@ -5,8 +5,6 @@ import {View,
         TouchableOpacity} from 'react-native'
 import Drawer from 'react-native-drawer'
 import { Router, Scene } from 'react-native-router-flux'
-
-
 import Main1 from './main1';
 import QuoteExpanded from './quoteExpanded'
 import timeStamp from './timeStamp'
@@ -18,7 +16,6 @@ export default class Start extends Component {
 constructor(){
 super()
 }
-
   render() {
       return (
         <Drawer
@@ -32,10 +29,6 @@ super()
           main: { opacity:(2-ratio)/2 }
         })
       }
-
-
-
-
           ref={(ref) => this._drawer = ref} width={200}
           content={
             <View style={styles.drawerImage}>
@@ -58,8 +51,6 @@ super()
           </Router>
           </View>
         </Drawer>
-
-
       )
   }
 }
@@ -78,11 +69,6 @@ const styles = StyleSheet.create({
       backgroundColor: 'white',
       flex: 1
     }
-
-
-
-
-
 })
 
 const backButtonStyle = {
