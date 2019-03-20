@@ -1,14 +1,10 @@
 # MyIdeaBank
 
-### note: still need to do some touching and add various functionalities
+### note: still need to do some touching work and add various functionalities
 ###Features:
-You can add different ideas into the main list. When you click an idea, it will be expanded into a new screen where there are 
-buttons to do other actions. For each idea, you can delete, like or hate the idea and your net like is
-shown as a number. Also, the moment you press a like or hate button, the time is recorded as list and you can keep track of the
-dates of when you either liked or hated your idea. 
+You can add ideas into the main list. When you click an idea, it will be expanded into a new screen containing buttons to perform other actions. You can like, dislike or delete an idea. Your net like is shown as a number. The moment you perfrom an action on an idea, the timestamp is inserted into a list through which you can keep track of the dates of when you liked or disliked your idea. 
 
-In addition, for each idea, you can view the lat/lon and it returns a map of where it was created. Also, it uses Google reverse 
-geocoding API to fetch lat/lon and give information on where the idea was created.
+In addition, the application users Google reverse geocoding API to fetch lat/lon for each idea and provides information on where an idea was created.
 
 ###Tools used:
  - React-native framework / javascript
